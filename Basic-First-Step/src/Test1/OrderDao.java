@@ -13,8 +13,6 @@ public class OrderDao {
     public void f(){
         String name = Thread.currentThread().getName();
         System.out.println("OrderDao 方法中线程名为" + name + "的对应值为" + threadLocalTest.threadLocal.get());
-
-
-
     }
+
 }

@@ -127,20 +127,22 @@ public class test05 {
 
         if (negativeCount == arr.length - 1 || postiveCount == arr.length - 1) {
             return true;
-        }else {
+        } else {
             return false;
         }
     }
+
+
 
     public static void main(String[] args) {
         int maxLen = 50;
         int maxValue = 1000;
         int testTimes = 10000;
         for (int i = 0; i < testTimes; i++) {
-            int[] arr1 = lenRandomValueRandom(maxLen,maxValue);
+            int[] arr1 = lenRandomValueRandom(maxLen, maxValue);
             int[] arr2 = copyArray(arr1);
             selectInsert(arr1);
-            if (!arrayIsOrder(arr1)){
+            if (!arrayIsOrder(arr1)) {
                 for (int i1 : arr2) {
                     System.out.print(i1);
                 }
